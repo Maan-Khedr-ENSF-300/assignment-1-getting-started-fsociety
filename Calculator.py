@@ -54,6 +54,14 @@ def operationVal():
    myOplist = [ '*' , '/' , '+' , '-' ]
  
    print('Enter the operators that you would like to use: \n"*" for Multiplication\n"/" for Division\n"+" for Addition\n"-" for Subtration')
+   
+   operator_1 = input("Please enter the first operator: ")
+   while operator_1 not in myOplist:
+       print('Please enter a valid operator')
+       operator_1 = input("Please enter the first operator: ")
+ 
+   print('You entered', operator_1)
+   myOperators.append(operator_1)
 
   
 
