@@ -81,7 +81,7 @@ def myCalc(myOperators, myIntegers):
     third_int  = myIntegers[2]
 
     if first_op == '*':
-    int_4 = myMul(first_int, second_int) 
+        int_4 = myMul(first_int, second_int) 
     if second_op == '*':
         return myMul(int_4, third_int)
     elif second_op == '/':
@@ -91,7 +91,7 @@ def myCalc(myOperators, myIntegers):
     elif second_op == '-':
         return mySub(int_4, third_int)
 
-elif first_op == '/':
+    elif first_op == '/':
        int_5 = myDiv(first_int, second_int)
        if second_op == '*':
            return myMul(int_5, third_int)
@@ -102,7 +102,7 @@ elif first_op == '/':
        elif second_op == '-':
            mySub(int_5, third_int)
 
-elif second_op == '*':
+    elif second_op == '*':
        int_6 = myAdd(second_int, third_int)
        if first_op == '*':
            return myMul(first_int, int_6)
@@ -113,7 +113,7 @@ elif second_op == '*':
        elif first_op == '-':
            return mySub(first_int, int_6)
 
-elif second_op == '/':
+    elif second_op == '/':
        int_7= myMul(second_int, third_int)
        if first_op == '*':
            return myMul(first_int, int_7)
@@ -124,21 +124,24 @@ elif second_op == '/':
        elif first_op == '-':
            return mySub(first_int, int_7)
 
-elif first_op == '+':
+    elif first_op == '+':
        int_8 = myAdd(first_int, second_int)
        if second_op == '+':
            return myAdd(int_8, third_int)
        elif second_op == '-':
            return mySub(int_8, third_int)
 
-
-
-elif first_op == '-':
+    elif first_op == '-':
        int_9 = mySub(first_int, second_int)
        if second_op == '-':
            return mySub(int_9, third_int)
        elif second_op == '+':
            return myAdd(int_9, third_int)
+
+def displayOp(myOperators, myIntegers, myAnswer):
+   print(myIntegers[0],myOperators[0],myIntegers[1],myOperators[1],myIntegers[2],'=', myAnswer)
+   
+   
  
 
 
