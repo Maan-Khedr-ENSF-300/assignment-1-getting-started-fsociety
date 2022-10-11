@@ -1,10 +1,3 @@
-def myCalc(myOperators, myIntegers):
-    first_op   = myOperators[0]
-    second_op  = myOperators[1]
-    first_int  = myIntegers[0]
-    second_int = myIntegers[1]
-    third_int  = myIntegers[2]
-    
 def myAdd(num1,num2):
     return num1 + num2
 
@@ -24,17 +17,20 @@ def intVal():
    while len(myIntegers) < integer_number:
        try:   
            int_1 = int(input('Enter the first integer for your calculation: '))
-
        except ValueError:
            print('Please enter an Integer')
            continue
-       
        else:
-       
-         print('You entered: ', int_1)
+        print('You entered: ', int_1)
        myIntegers.append(int_1)
        break
-   
-
-
-
+   while len(myIntegers) < integer_number:  
+       try:   
+           int_2 = int(input('Enter the second integer for your calculation: '))   
+       except ValueError:
+           print('Please enter an Integer')
+           continue
+       else:
+           print('You entered: ', int_2)
+       myIntegers.append(int_2)
+       break
