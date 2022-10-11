@@ -82,14 +82,15 @@ def myCalc(myOperators, myIntegers):
 
     if first_op == '*':
         int_4 = myMul(first_int, second_int) 
-    if second_op == '*':
-        return myMul(int_4, third_int)
-    elif second_op == '/':
-        return myDiv(int_4, third_int)
-    elif second_op == '+':
-        return myAdd(int_4, third_int)
-    elif second_op == '-':
-        return mySub(int_4, third_int)
+        if second_op == '*':
+            return myMul(int_4, third_int)
+        elif second_op == '/':
+            return myDiv(int_4, third_int)
+        elif second_op == '+':
+            return myAdd(int_4, third_int)
+        elif second_op == '-':
+            return mySub(int_4, third_int)
+        
 
     elif first_op == '/':
        int_5 = myDiv(first_int, second_int)
@@ -103,7 +104,7 @@ def myCalc(myOperators, myIntegers):
            mySub(int_5, third_int)
 
     elif second_op == '*':
-       int_6 = myAdd(second_int, third_int)
+       int_6 = myMul(second_int, third_int)
        if first_op == '*':
            return myMul(first_int, int_6)
        elif first_op == '/':
