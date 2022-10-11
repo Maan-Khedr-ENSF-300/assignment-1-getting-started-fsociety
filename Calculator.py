@@ -91,6 +91,16 @@ def myCalc(myOperators, myIntegers):
     elif second_op == '-':
         return mySub(int_4, third_int)
 
+elif first_op == '/':
+       int_5 = myDiv(first_int, second_int)
+       if second_op == '*':
+           return myMul(int_5, third_int)
+       elif second_op == '/':
+           return myDiv(int_5, third_int)
+       elif second_op == '+':
+           return myAdd(int_5, third_int)
+       elif second_op == '-':
+           mySub(int_5, third_int)
 
 
   
