@@ -25,3 +25,16 @@ def intVal():
        try:   
            int_1 = int(input('Enter the first integer for your calculation: '))
 
+       except ValueError:
+           print('Please enter an Integer')
+           continue
+       
+       else:
+       
+         print('You entered: ', int_1)
+       myIntegers.append(int_1)
+       break
+   
+
+
+
