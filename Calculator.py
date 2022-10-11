@@ -74,12 +74,23 @@ def operationVal():
    return myOperators
 
 def myCalc(myOperators, myIntegers):
-    first_op = myOperators[0]
-    second_op = myOperators[1]
-    first_int = myIntegers[0]
+    first_op   = myOperators[0]
+    second_op  = myOperators[1]
+    first_int  = myIntegers[0]
     second_int = myIntegers[1]
-    third_int = myIntegers[2]
-    
+    third_int  = myIntegers[2]
+
+    if first_op == '*':
+    int_4 = myMul(first_int, second_int) 
+    if second_op == '*':
+        return myMul(int_4, third_int)
+    elif second_op == '/':
+        return myDiv(int_4, third_int)
+    elif second_op == '+':
+        return myAdd(int_4, third_int)
+    elif second_op == '-':
+        return mySub(int_4, third_int)
+
 
 
   
