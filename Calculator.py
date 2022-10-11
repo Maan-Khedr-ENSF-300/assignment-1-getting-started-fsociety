@@ -115,7 +115,7 @@ def myCalc(myOperators, myIntegers):
            return mySub(first_int, int_6)
 
     elif second_op == '/':
-       int_7= myMul(second_int, third_int)
+       int_7= myDiv(second_int, third_int)
        if first_op == '*':
            return myMul(first_int, int_7)
        elif first_op == '/':
