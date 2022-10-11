@@ -102,6 +102,26 @@ elif first_op == '/':
        elif second_op == '-':
            mySub(int_5, third_int)
 
+elif second_op == '*':
+       int_6 = myAdd(second_int, third_int)
+       if first_op == '*':
+           return myMul(first_int, int_6)
+       elif first_op == '/':
+           return myDiv(first_int, int_6)
+       elif first_op == '+':
+           return myAdd(first_int, int_6)
+       elif first_op == '-':
+           return mySub(first_int, int_6)
+elif second_op == '/':
+       int_7= myMul(second_int, third_int)
+       if first_op == '*':
+           return myMul(first_int, int_7)
+       elif first_op == '/':
+           return myDiv(first_int, int_7)
+       elif first_op == '+':
+           return myAdd(first_int, int_7)
+       elif first_op == '-':
+           return mySub(first_int, int_7)
 
   
 
