@@ -44,3 +44,7 @@ def intVal():
            print('You entered: ', int_3)
        myIntegers.append(int_3)
        break
+   print('Your inputs for the calculator are: ')
+   print(myIntegers)
+   return myIntegers
+
