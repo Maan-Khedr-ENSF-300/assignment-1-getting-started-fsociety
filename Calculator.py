@@ -140,7 +140,14 @@ def myCalc(myOperators, myIntegers):
 
 def displayOp(myOperators, myIntegers, myAnswer):
    print(myIntegers[0],myOperators[0],myIntegers[1],myOperators[1],myIntegers[2],'=', myAnswer)
-   
+
+def main():
+   intList = intVal()
+   OpList = operationVal()
+   Answer = myCalc(OpList, intList)
+   displayOp(OpList,intList,Answer)
+
+
    
  
 
