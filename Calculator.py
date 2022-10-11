@@ -148,6 +148,9 @@ def main():
    displayOp(OpList,intList,Answer)
 
 
+if __name__ == '__main__':
+   main()
+
    
  
 
