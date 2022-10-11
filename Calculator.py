@@ -44,3 +44,9 @@ def intVal():
            print('You entered: ', int_3)
        myIntegers.append(int_3)
        break
+   
+def operationVal():
+   myOperators = []
+   myOplist = [ '*' , '/' , '+' , '-' ]
+ 
+   print('Enter the operators that you would like to use: \n"*" for Multiplication\n"/" for Division\n"+" for Addition\n"-" for Subtration')
