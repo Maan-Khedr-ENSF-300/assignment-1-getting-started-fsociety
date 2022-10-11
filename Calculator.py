@@ -62,6 +62,17 @@ def operationVal():
  
    print('You entered', operator_1)
    myOperators.append(operator_1)
+   
+   operator_2 = input('Enter the second operator: ')
+   while operator_2 not in myOplist:
+       print('Please enter a valid operator')
+       operator_2 = input('Enter the second operator: ')
+ 
+   print('You entered', operator_2)
+   myOperators.append(operator_2)
+  
+   return myOperators
+
 
   
 
