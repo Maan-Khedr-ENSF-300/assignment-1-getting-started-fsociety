@@ -34,3 +34,13 @@ def intVal():
            print('You entered: ', int_2)
        myIntegers.append(int_2)
        break
+while len(myIntegers) < integer_number:
+       try:   
+           int_3 = int(input('Enter the third integer for your calculation: '))   
+       except ValueError:
+           print('Please enter an Integer')
+           continue
+       else:
+           print('You entered: ', int_3)
+       myIntegers.append(int_3)
+       break
